@@ -1,0 +1,24 @@
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "devteks",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NGE2MTgwNDctZTMzOC00NGM4LWE1NTItODIyNjA1NTgxM2Q4fHJlYWQtd3JpdGU="
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@devteks/downloader",
+  "description": "Simple node.js file downloader",
+  "version": "0.0.2",
+  "license": "MIT",
+  "author": {
+    "name": "Mosa Muhana <mosamuhana@gmail.com>",
+    "url": "https://github.com/mosamuhana"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mosamuhana/node-downloader.git"
+  },
+  "homepage": "https://github.com/mosamuhana/node-downloader",
+  "keywords": [
+    "node",
+    "nodejs",
+    "node.js",
+    "download",
+    "downloader",
+    "resumable",
+    "resume",
+    "http",
+    "https"
+  ],
+  "bugs": {
+    "url": "https://github.com/mosamuhana/node-downloader/issues"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "bin": {
+    "download": "download"
+  }
+}

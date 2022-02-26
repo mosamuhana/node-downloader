@@ -1,0 +1,37 @@
+{
+  "root": "packages/downloader",
+  "sourceRoot": "packages/downloader/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/downloader/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/downloader"],
+      "options": {
+        "jestConfig": "packages/downloader/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist",
+        "main": "packages/downloader/src/index.ts",
+        "tsConfig": "packages/downloader/tsconfig.lib.json",
+        "packageJson": "packages/downloader/package.json",
+        "assets": [
+          "README.md",
+          "packages/downloader/download"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

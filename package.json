@@ -1,0 +1,68 @@
+{
+  "private": true,
+  "name": "devteks",
+  "description": "Simple node.js file downloader",
+  "version": "0.0.2",
+  "license": "MIT",
+  "author": {
+    "name": "Mosa Muhana <mosamuhana@gmail.com>",
+    "url": "https://github.com/mosamuhana"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mosamuhana/node-downloader.git"
+  },
+  "homepage": "https://github.com/mosamuhana/node-downloader",
+  "keywords": [
+    "node",
+    "nodejs",
+    "node.js",
+    "download",
+    "downloader",
+    "resumable",
+    "resume",
+    "http",
+    "https"
+  ],
+  "bugs": {
+    "url": "https://github.com/mosamuhana/node-downloader/issues"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "bin": {
+    "download": "download"
+  },
+  "scripts": {
+    "build": "npx nx build downloader",
+    "prepublish": "npm run build",
+    "publish": "cd ./dist && npm publish --access public",
+    "test": "npx nx test downloader"
+  },
+  "devDependencies": {
+    "@nrwl/cli": "13.8.3",
+    "@nrwl/eslint-plugin-nx": "13.8.3",
+    "@nrwl/jest": "13.8.3",
+    "@nrwl/linter": "13.8.3",
+    "@nrwl/node": "^13.8.3",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/tao": "13.8.3",
+    "@nrwl/workspace": "13.8.3",
+    "@types/jest": "27.4.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "~5.10.0",
+    "@typescript-eslint/parser": "~5.10.0",
+    "eslint": "~8.10.0",
+    "eslint-config-prettier": "8.4.0",
+    "jest": "27.5.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "27.1.3",
+    "typescript": "~4.5.5"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  },
+  "workspaces": [
+    "packages/**"
+  ]
+}
