@@ -35,7 +35,9 @@ downloader.start();
 
 This can be used as standalone CLI downloader
 
-Install `npm i -g @devteks/downloader`
+```
+$ npm i -g @devteks/downloader
+```
 
 Usage: `$ download [dir] url`
 
