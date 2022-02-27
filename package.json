@@ -2,7 +2,7 @@
   "private": true,
   "name": "devteks",
   "description": "Simple node.js file downloader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "author": {
     "name": "Mosa Muhana <mosamuhana@gmail.com>",
