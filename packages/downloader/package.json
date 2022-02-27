@@ -1,7 +1,7 @@
 {
   "name": "@devteks/downloader",
   "description": "Simple node.js file downloader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "author": {
     "name": "Mosa Muhana <mosamuhana@gmail.com>",
@@ -31,5 +31,8 @@
   },
   "bin": {
     "download": "download"
+  },
+  "dependencies": {
+    "tslib": ">=2.0.0"
   }
 }

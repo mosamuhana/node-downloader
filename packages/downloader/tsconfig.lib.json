@@ -5,6 +5,7 @@
     "outDir": "../../dist/out-tsc",
     "declaration": true,
     "removeComments": false,
+    "importHelpers": true,
     "types": ["node"]
   },
   "exclude": ["**/*.spec.ts", "**/*.test.ts"],
