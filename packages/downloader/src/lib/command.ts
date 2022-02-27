@@ -39,7 +39,12 @@ const fmtSize = (v: number) => {
 const getArgs = (): { url: string, dest: string } | undefined => {
   const args = process.argv.slice(2);
 
-  // Arguments
+  if (args.indexOf('-v') > -1 || args.indexOf('--version') > -1) {
+    const pkg = require('../../package.json');
+    print(`${_m(CMD)} v${pkg.version}`);
+    return;
+  }
+
   if (args.length < 1) {
 print(`${_b('USAGE:')} $ ${_m(CMD)} ${_y('[dir]')} ${_y('url')}
 
